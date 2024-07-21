@@ -110,6 +110,14 @@ public class Main {
         assert(pairNumber == expectedPairNumber);
     }
 
+    static void printColorCodingReferenceManual(){
+        System.out.println("Color Coding Manual:");
+        for (int i = 1; i <= numberOfMajorColors * numberOfMinorColors; i++) {
+            ColorPair colorPair = getColorFromPairNumber(i);
+            System.out.println(i + " - " + colorPair.toString());
+        }
+    }
+
     public static void main(String[] args) {
         testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
         testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
