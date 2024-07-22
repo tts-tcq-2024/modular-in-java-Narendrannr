@@ -65,35 +65,18 @@ public class ColorCoder {
     };
     private static final int numberOfMinorColors = minorColorNames.length;
 
-    public static class ColorPair {
-        private MajorColor majorColor;
-        private MinorColor minorColor;
+    public static String getMajorColorName(MajorColor majorColor) {
+        return majorColorNames[majorColor.getIndex()];
+    }
 
-        public ColorPair(MajorColor major, MinorColor minor) {
-            majorColor = major;
-            minorColor = minor;
-        }
-
-        public MajorColor getMajor() {
-            return majorColor;
-        }
-
-        public MinorColor getMinor() {
-            return minorColor;
-        }
-
-        @Override
-        public String toString() {
-            return majorColorNames[majorColor.getIndex()] + " " + minorColorNames[minorColor.getIndex()];
-        }
+    public static String getMinorColorName(MinorColor minorColor) {
+        return minorColorNames[minorColor.getIndex()];
     }
 
     public static ColorPair getColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
-        MajorColor majorColor =
-                MajorColor.fromIndex(zeroBasedPairNumber / numberOfMinorColors);
-        MinorColor minorColor =
-                MinorColor.fromIndex(zeroBasedPairNumber % numberOfMinorColors);
+        MajorColor majorColor = MajorColor.fromIndex(zeroBasedPairNumber / numberOfMinorColors);
+        MinorColor minorColor = MinorColor.fromIndex(zeroBasedPairNumber % numberOfMinorColors);
         return new ColorPair(majorColor, minorColor);
     }
 
