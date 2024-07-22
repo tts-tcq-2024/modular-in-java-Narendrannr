@@ -113,7 +113,7 @@ public class Main {
     static void printColorCodingReferenceManual(){
         System.out.println("Color Coding Manual:");
         for (int i = 1; i <= numberOfMajorColors * numberOfMinorColors; i++) {
-            ColorPair colorPair = getColorFromPairNumber(i);
+            ColorPair colorPair = GetColorFromPairNumber(i);
             System.out.println(i + " - " + colorPair.toString());
         }
     }
