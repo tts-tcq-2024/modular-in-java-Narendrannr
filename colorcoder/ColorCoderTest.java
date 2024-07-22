@@ -2,7 +2,7 @@ package colorcoder;
 
 import colorcoder.ColorCoder.MajorColor;
 import colorcoder.ColorCoder.MinorColor;
-import colorcoder.ColorCoder.ColorPair;
+import colorcoder.ColorPair;
 
 public class ColorCoderTest {
 
