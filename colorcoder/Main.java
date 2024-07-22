@@ -124,5 +124,7 @@ public class Main {
     
         testPairToNumber(MajorColor.BLACK, MinorColor.ORANGE, 12);
         testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
+        //print color coding reference manual
+        printColorCodingReferenceManual();
     }
 }
