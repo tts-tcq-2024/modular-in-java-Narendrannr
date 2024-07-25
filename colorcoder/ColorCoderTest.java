@@ -1,9 +1,5 @@
 package colorcoder;
 
-import colorcoder.ColorCoder.MajorColor;
-import colorcoder.ColorCoder.MinorColor;
-import colorcoder.ColorPair;
-
 public class ColorCoderTest {
 
     public static void testNumberToPair(int pairNumber,
