@@ -1,9 +1,8 @@
 package colorcoder;
 
-public class Main {
+public class ColorCodingApplication {
 
     public static void main(String[] args) {
         ColorCoderTest.main(args);
-        ColorCoder.printColorCodingManual();
     }
 }
