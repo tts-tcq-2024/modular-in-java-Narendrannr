@@ -1,19 +1,19 @@
 package colorcoder;
 
 public class ColorPair {
-    private ColorCoder.MajorColor majorColor;
-    private ColorCoder.MinorColor minorColor;
+    private MajorColor majorColor;
+    private MinorColor minorColor;
 
-    public ColorPair(ColorCoder.MajorColor major, ColorCoder.MinorColor minor) {
+    public ColorPair(MajorColor major, MinorColor minor) {
         this.majorColor = major;
         this.minorColor = minor;
     }
 
-    public ColorCoder.MajorColor getMajor() {
+    public MajorColor getMajor() {
         return majorColor;
     }
 
-    public ColorCoder.MinorColor getMinor() {
+    public MinorColor getMinor() {
         return minorColor;
     }
 
